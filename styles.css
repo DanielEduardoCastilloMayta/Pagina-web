@@ -1,0 +1,217 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+
+.centrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+}
+
+body.inicio {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+        url('imagenes/fondo-inicio.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body.profesores {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+        url('imagenes/fondo-profesores.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body.compañeros {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+        url('imagenes/fondo-compañeros.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin: 10px 0;
+    color: #2a7f62;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    color: #2a7f62;
+    border-bottom: 2px solid #2a7f62;
+    padding-bottom: 10px;
+}
+
+.tarjeta {
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.boton {
+    display: block;
+    background: #2a7f62;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+}
+
+.boton:hover {
+    background: #1f5e48;
+    transform: translateY(-3px);
+}
+
+.volver {
+    color: #2a7f62;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.lista-cursos {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-cursos li {
+    padding: 12px 0;
+    border-bottom: 1px dashed rgba(255,255,255,0.2);
+    font-size: 1.1rem;
+}
+
+.lista-con-links {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.lista-con-links li {
+    padding: 12px 0;
+    border-bottom: 1px dashed rgba(255,255,255,0.2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.enlace-persona {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.3s;
+    font-size: 1.1rem;
+}
+
+.enlace-persona:hover {
+    color: #2a7f62;
+    text-decoration: underline;
+}
+
+.contacto {
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-left: 15px;
+}
+
+.materia {
+    font-weight: bold;
+    min-width: 220px;
+    display: inline-block;
+    color: #ddd;
+}
+
+.presentacion {
+    text-align: left;
+}
+
+.info-personal p {
+    margin: 10px 0;
+    padding-left: 15px;
+    border-left: 3px solid #2a7f62;
+}
+
+.info-personal strong {
+    color: #2a7f62;
+    min-width: 100px;
+    display: inline-block;
+}
+
+.redes-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 0;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.boton-contacto {
+    display: flex;
+    align-items: center;
+    background: rgba(42, 127, 98, 0.2);
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 30px;
+    border: 1px solid #2a7f62;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+    margin: 5px;
+}
+
+.boton-contacto:hover {
+    background: rgba(42, 127, 98, 0.4);
+    transform: translateY(-2px);
+}
+
+.boton-contacto img {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+    transition: all 0.2s;
+}
+
+.boton-contacto:hover img {
+    opacity: 1;
+    transform: scale(1.05);
+}
